@@ -23,9 +23,6 @@ img {
 	height: auto;
 	max-height: 150px;
 }
-header, h1, p {
-	border: 1px solid black;
-}
 
 
 nav {
