@@ -1,0 +1,273 @@
+<!-- cheatsheetvim page -->
+
+<!DOCTYPE >
+<html>
+	<head>
+		<meta charset="utf-8" >
+		<meta name="keywords" content="cheatsheet,vim,editor">
+		<meta name="author" content="Dehondt matthieu">				
+		<meta name="description" content="a cheatsheet for vim editor">
+		<title>CheatSheet For Vim Editor</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	
+	<body>
+		<header>
+			<div class="mytitle">
+			<h1>CheatSheetGit</h1>
+			<p>A CheatSheet For Git Versionning</p>
+			</div>
+			<img src="git.jpg" alt"logo de git">
+		</header>
+
+		<nav>
+			<a href="#create">Create</a>
+			<a href="#local">Local Change</a>
+			<a href="#commit">Commit History</a>
+			<a href="#update">Update & Publish</a>
+			<a href="#branch">Branch & tags</a>
+			<a href="#merge">Merge & Rebase</a>
+			<a href="#undo">Undo</a>
+		</nav>
+
+		<section>
+				<table>
+					<thead>
+						<tr>
+							<th id="create">CREATE</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Clone an existing repository</th>
+						</tr>
+						<tr>
+							<td><code>$ git clone ssh user@domaine.com/<em>repository</em>.git</code></td>
+						</tr>
+						</tr>
+						<tr>
+							<th>Create a new local repository</th>
+						</tr>
+						<tr>
+							<td><code>$ git init</code></td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+				<table>
+					<thead>
+						<tr>
+							<th id="local">LOCAL CHANGES</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Changed files in working directory</th>
+						</tr>
+						<tr>
+							<td><code>$ git status</code></td>
+						</tr>
+						<tr>
+							<th>Change to track files</th>
+						</tr>
+						<tr>
+							<td><code>$ git diff</code> </td>
+						</tr>
+						<tr>
+							<th>Add current change to next commit</th>
+						</tr>
+						<tr>
+							<td><code>$ git add <em>files</em></code></td>
+						</tr>
+						<tr>
+							<th>Commit prev. staged changes with message</th>
+						</tr>
+						<tr>
+							<td><code>$ git commit -m "message"</code></td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+				<table>
+					<thead>
+						<tr>
+							<th id="commit">COMMIT HSTORY</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Show all commits</th>
+						</tr>
+						<tr>
+							<td><code>$ git log</code></td>
+						</tr>
+						<tr>
+							<th>Who change what and when in <em>file</em></th>
+						</tr>
+						<tr>
+							<td><code>$ git blame <em>file</em></code></td>
+						</tr>
+					</tbody>
+				</table>
+
+
+				<table>
+					<thead>
+						<tr>
+							<th id="update">UPDATE & PUBLISH</th>
+						</tr>
+					</thead>
+					
+					<tbody> 
+						<tr> 
+							<th>List all currently configured remotes</th> 
+						</tr>
+						<tr>
+							<td><code>$ git remote -V</code></td>
+						</tr>
+						<tr>
+							<th>Show information about a remote</th>
+						</tr>
+						<tr>
+							<td><code>$ git remote show <em>remote</em></code></td>
+						</tr>
+						<tr>
+							<th>Add new remote repository named <em>remote</em></th>
+						</tr>
+						<tr>
+							<td><code>$ git remote add <em>shortname</em> <em>url</em></code><td>
+						</tr>
+						<tr>
+							<th>Download changes and merge to HEAD</th>
+						</tr>
+						<tr>
+							<td><code>$ git pull <em>remote</em> <em>branch</em></code><td>
+						</tr>
+						<tr>
+							<th>Publish local change on a remote</th>
+						</tr>
+						<tr>
+							<td><code>$ git push <em>remote</em> <em>branch</em></code><td>
+						</tr>
+
+					</tbody>
+				</table>
+
+
+
+
+				<table>
+					<thead>
+						<tr>
+							<th id="branch">BRANCH & TAGS</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>List all existing branch</th>
+						</tr>
+						<tr>
+							<td><code>$ git branch -av</code></td>
+						</tr>
+						<tr>
+							<th>Switch HEAD branch</th>
+						</tr>
+						<tr>
+							<td><code>$ git checkut <em>branch</em></code></td>
+						</tr>
+						<tr>
+							<th>Create a new branch</th>
+						</tr>
+						<tr>
+							<td><code>$ git branch <em>branch</em></code><td>
+						</tr>
+						<tr>
+							<th>Delete a local branch</th>
+						</tr>
+						<tr>
+							<td><code>$ git branch -d <em>branch</em></code><td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+
+
+				<table>
+					<thead>
+						<tr>
+							<th id="merge">MERGE & REBASE</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Merge <em>branch</em>into your HEAD </th>
+						</tr>
+						<tr>
+							<td><code>$ git merge <em>branch</em></code></td>
+						</tr>
+						<tr>
+							<th>Rebase your current HEAD onto branch </th>
+						</tr>
+						<tr>
+							<td><code>$ git rebase <em>branch</em></code></td>
+						</tr>
+						<tr>
+							<th>Use merge tool to resolve conflict</th>
+						</tr>
+						<tr>
+							<td><code>$ git mergetool</code><td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+
+				<table>
+					<thead>
+						<tr>
+							<th id="undo">UNDO</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Discard all local change in working directory</th>
+						</tr>
+						<tr>
+							<td><code>$ git reset --hard HEAD</code></td>
+						</tr>
+						<tr>
+							<th>Discard local change in file</th>
+						</tr>
+						<tr>
+							<td><code>$git checkout HEAD <em>file</em></code></td>
+						</tr>
+						<tr>
+							<th>Revert a commit</th>
+						</tr>
+						<tr>
+							<td><code>$ git revert <em>commit</em></code><td>
+						</tr>
+					</tbody>
+				</table>
+
+
+		</section>
+
+		<footer>
+			Web Site's Author: DEHONDT MATTHIEU
+		</footer>
+	</body>
+</html>
