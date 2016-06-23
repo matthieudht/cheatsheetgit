@@ -25,24 +25,243 @@
 			<a href="#">Branch & tags</a>
 			<a href="#">Merge & Rebase</a>
 			<a href="#">Undo</a>
-
 		</nav>
 
 		<section>
 			<article>
-			</article>
+				<table>
+					<thead>
+						<tr>
+							<th>CREATE</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Clone an existing repository</th>
+						</tr>
+						<tr>
+							<td><code>$ git clone ssh user@domaine.com/<em>repository</em>.git</code></td>
+						</tr>
+						</tr>
+						<tr>
+							<th>Create a new local repository</th>
+						</tr>
+						<tr>
+							<td><code>$ git init</code></td>
+						</tr>
+					</tbody>
+				</table>
 
-			<article></article>
 
-			<article></article>
 
-			<article></article>
+				<table>
+					<thead>
+						<tr>
+							<th>LOCAL CHANGES</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Changed files in working directory</th>
+						</tr>
+						<tr>
+							<td><code>$ git status</code></td>
+						</tr>
+						<tr>
+							<th>Change to track files</th>
+						</tr>
+						<tr>
+							<td><code>$ git diff</code> </td>
+						</tr>
+						<tr>
+							<th>Add current change to next commit</th>
+						</tr>
+						<tr>
+							<td><code>$ git add <em>files</em></code></td>
+						</tr>
+						<tr>
+							<th>Commit prev. staged changes with message</th>
+						</tr>
+						<tr>
+							<td><code>$ git commit -m "message"</code></td>
+						</tr>
+					</tbody>
+				</table>
 
-			<article></article>
 
-			<article></article>
 
-			<article></article>
+				<table>
+					<thead>
+						<tr>
+							<th>COMMIT HSTORY</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Show all commits</th>
+						</tr>
+						<tr>
+							<td><code>$ git log</code></td>
+						</tr>
+						<tr>
+							<th>Who change what and when in <em>file</em></th>
+						</tr>
+						<tr>
+							<td><code>$ git blame <em>file</em></code></td>
+						</tr>
+					</tbody>
+				</table>
+
+
+				<table>
+					<thead>
+						<tr>
+							<th>UPDATE & PUBLISH</th>
+						</tr>
+					</thead>
+					
+					<tbody> 
+						<tr> 
+							<th>List all currently configured remotes</th> 
+						</tr>
+						<tr>
+							<td><code>$ git remote -V</code></td>
+						</tr>
+						<tr>
+							<th>Show information about a remote</th>
+						</tr>
+						<tr>
+							<td><code>$ git remote show <em>remote</em></code></td>
+						</tr>
+						<tr>
+							<th>Add new remote repository named <em>remote</em></th>
+						</tr>
+						<tr>
+							<td><code>$ git remote add <em>shortname</em> <em>url</em></code><td>
+						</tr>
+						<tr>
+							<th>Download changes and merge to HEAD</th>
+						</tr>
+						<tr>
+							<td><code>$ git pull <em>remote</em> <em>branch</em></code><td>
+						</tr>
+						<tr>
+							<th>Publish local change on a remote</th>
+						</tr>
+						<tr>
+							<td><code>$ git push <em>remote</em> <em>branch</em></code><td>
+						</tr>
+
+					</tbody>
+				</table>
+
+
+
+
+				<table>
+					<thead>
+						<tr>
+							<th>BRANCH & TAGS</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>List all existing branch</th>
+						</tr>
+						<tr>
+							<td><code>$ git branch -av</code></td>
+						</tr>
+						<tr>
+							<th>Switch HEAD branch</th>
+						</tr>
+						<tr>
+							<td><code>$ git checkut <em>branch</em></code></td>
+						</tr>
+						<tr>
+							<th>Create a new branch</th>
+						</tr>
+						<tr>
+							<td><code>$ git branch <em>branch</em></code><td>
+						</tr>
+						<tr>
+							<th>Delete a local branch</th>
+						</tr>
+						<tr>
+							<td><code>$ git branch -d <em>branch</em></code><td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+
+
+				<table>
+					<thead>
+						<tr>
+							<th>MERGE & REBASE</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Merge <em>branch</em>into your HEAD </th>
+						</tr>
+						<tr>
+							<td><code>$ git merge <em>branch</em></code></td>
+						</tr>
+						<tr>
+							<th>Rebase your current HEAD onto branch </th>
+						</tr>
+						<tr>
+							<td><code>$ git rebase <em>branch</em></code></td>
+						</tr>
+						<tr>
+							<th>Use merge tool to resolve conflict</th>
+						</tr>
+						<tr>
+							<td><code>$ git mergetool</code><td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+
+				<table>
+					<thead>
+						<tr>
+							<th>UNDO</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Discard all local change in working directory</th>
+						</tr>
+						<tr>
+							<td><code>$ git reset --hard HEAD</code></td>
+						</tr>
+						<tr>
+							<th>Discard local change in file</th>
+						</tr>
+						<tr>
+							<td><code>$git checkout HEAD <em>file</em></code></td>
+						</tr>
+						<tr>
+							<th>Revert a commit</th>
+						</tr>
+						<tr>
+							<td><code>$ git revert <em>commit</em></code><td>
+						</tr>
+					</tbody>
+				</table>
+
+
 		</section>
 
 		<footer>
