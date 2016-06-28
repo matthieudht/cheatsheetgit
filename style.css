@@ -5,6 +5,7 @@ body {
 	flex-direction: column;
 }
 
+/* style for header */
 
 header {
 	background-repeat: no-repeat;
@@ -17,16 +18,15 @@ header {
 	justify-content: space-around;
 	color: #745000;
 
-
 }
 img {
 	height: auto;
 	max-height: 150px;
 }
-header, h1, p {
-	border: 1px solid black;
-}
 
+
+
+/* style for navigation bar */
 
 nav {
 	background-color: Chocolate; 
@@ -55,6 +55,8 @@ a:visited {
 }
 
 
+
+/* style for all article and table */
 
 thead th  {
 	background-color: DarkGoldenRod;
@@ -89,6 +91,7 @@ table {
 
 }
 
+/* resolving responsive design problem */
 
 @media screen and (max-width: 700px)
 {
